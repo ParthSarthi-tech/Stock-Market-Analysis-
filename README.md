@@ -48,7 +48,7 @@ aggregation, visualization, and interpretation.
 
 ## 🚀 Live Demo
 
-🔗 *(Link will be added after Streamlit Cloud deployment)*
+🔗 https://fjutgyjwtegd5d2cpz96gj.streamlit.app
 
 ---
 
