@@ -13,184 +13,185 @@ st.set_page_config(
 # ENHANCED CUSTOM CSS
 
 st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-* {
-    font-family: 'Inter', sans-serif;
-}
+    * {
+        font-family: 'Inter', sans-serif;
+    }
 
-.main {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1d35 100%);
-}
+    .main {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a1d35 100%);
+    }
 
-.stApp {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1d35 100%);
-}
+    .stApp {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a1d35 100%);
+    }
 
-/* Header Styling */
-h1 {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    font-size: 3rem !important;
-    margin-bottom: 0.5rem !important;
-}
+    /* Header Styling */
+    h1 {
+        background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        font-size: 3rem !important;
+        margin-bottom: 0.5rem !important;
+    }
 
-h2 {
-    color: #e0e7ff;
-    font-weight: 600;
-    font-size: 1.5rem !important;
-    margin-top: 2rem !important;
-    margin-bottom: 1rem !important;
-}
+    h2 {
+        color: #e0e7ff;
+        font-weight: 600;
+        font-size: 1.5rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
 
-h3 {
-    color: #c7d2fe;
-    font-weight: 600;
-}
+    h3 {
+        color: #c7d2fe;
+        font-weight: 600;
+    }
 
-/* Metric Cards */
-.metric-card {
-    background: linear-gradient(135deg, #1e2139 0%, #252a48 100%);
-    padding: 24px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(102, 126, 234, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
+    /* Metric Cards */
+    .metric-card {
+        background: linear-gradient(135deg, #1e2139 0%, #252a48 100%);
+        padding: 24px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
 
-.metric-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-}
+    .metric-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    }
 
-.metric-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 48px rgba(102, 126, 234, 0.2);
-}
+    .metric-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 48px rgba(102, 126, 234, 0.2);
+    }
 
-.metric-label {
-    font-size: 13px;
-    color: #9ca3af;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
+    .metric-label {
+        font-size: 13px;
+        color: #9ca3af;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
 
-.metric-value {
-    font-size: 32px;
-    font-weight: 800;
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 8px 0;
-}
+    .metric-value {
+        font-size: 32px;
+        font-weight: 800;
+        background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 8px 0;
+    }
 
-.metric-subtitle {
-    font-size: 16px;
-    color: #d1d5db;
-    font-weight: 500;
-}
+    .metric-subtitle {
+        font-size: 16px;
+        color: #d1d5db;
+        font-weight: 500;
+    }
 
-/* Sidebar Styling */
-.css-1d391kg, [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #1a1d35 0%, #0f1220 100%);
-    border-right: 1px solid rgba(102, 126, 234, 0.1);
-}
+    /* Sidebar Styling */
+    .css-1d391kg, [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #1a1d35 0%, #0f1220 100%);
+        border-right: 1px solid rgba(102, 126, 234, 0.1);
+    }
 
-.css-1d391kg h2, [data-testid="stSidebar"] h2 {
-    color: #e0e7ff !important;
-    font-size: 1.2rem !important;
-}
+    .css-1d391kg h2, [data-testid="stSidebar"] h2 {
+        color: #e0e7ff !important;
+        font-size: 1.2rem !important;
+    }
 
-/* Section Headers */
-.section-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 40px 0 20px 0;
-    padding-bottom: 12px;
-    border-bottom: 2px solid rgba(102, 126, 234, 0.3);
-}
+    /* Section Headers */
+    .section-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 40px 0 20px 0;
+        padding-bottom: 12px;
+        border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+    }
 
-.section-icon {
-    font-size: 28px;
-}
+    .section-icon {
+        font-size: 28px;
+    }
 
-.section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #e0e7ff;
-    margin: 0;
-}
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #e0e7ff;
+        margin: 0;
+    }
 
-/* Info Banner */
-.info-banner {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-    border-left: 4px solid #667eea;
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    color: #c7d2fe;
-    font-size: 15px;
-}
+    /* Info Banner */
+    .info-banner {
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        border-left: 4px solid #667eea;
+        padding: 16px 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        color: #c7d2fe;
+        font-size: 15px;
+    }
 
-/* Download Button */
-.stDownloadButton button {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    padding: 12px 32px;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
+    * Download Button */
+    .stDownloadButton button {
+        background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 12px 32px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
 
-.stDownloadButton button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
-}
+    .stDownloadButton button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+    } 
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    border-top: 1px solid rgba(102, 126, 234, 0.2);
-    color: #9ca3af;
-}
+    /* Footer */
+        .footer {
+        text-align: center;
+        padding: 40px 20px;
+        margin-top: 60px;
+        border-top: 1px solid rgba(102, 126, 234, 0.2);
+        color: #9ca3af;
+    }
 
-.footer-tech {
-    font-size: 14px;
-    font-weight: 500;
-    color: #667eea;
-}
+    .footer-tech {
+        font-size: 14px;
+        font-weight: 500;
+        color: #667eea;
+    }
 
-/* Selectbox */
-.stSelectbox > div > div {
-    background: #1e2139;
-    border: 1px solid rgba(102, 126, 234, 0.2);
-    color: #e0e7ff;
-}
+    /* Selectbox */
+    .stSelectbox > div > div {
+        background: #1e2139;
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        color: #e0e7ff;
+    }
 
-/* Multiselect */
-.stMultiSelect > div > div {
-    background: #1e2139;
-    border: 1px solid rgba(102, 126, 234, 0.2);
-}
-</style>
-""", unsafe_allow_html=True)
+    /* Multiselect */
+    .stMultiSelect > div > div {
+        background: #1e2139;
+        border: 1px solid rgba(102, 126, 234, 0.2);
+    }
+    </style>
+    """, unsafe_allow_html=True
+)
 
 # HEADER
 st.markdown("""
@@ -349,7 +350,7 @@ fig1.update_layout(
     hovermode='closest'
 )
 
-st.plotly_chart(fig1, use_container_width=True)
+st.plotly_chart(fig1, width='stretch')
 
 # TWO COLUMN LAYOUT
 col_left, col_right = st.columns(2)
@@ -380,7 +381,7 @@ with col_left:
         showlegend=False
     )
     
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width='stretch')
 
 with col_right:
     st.markdown("## ⚖️ Risk-Adjusted Returns")
@@ -405,7 +406,7 @@ with col_right:
         height=400
     )
     
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, width='stretch')
 
 # ROLLING TREND
 
@@ -442,7 +443,7 @@ fig4.update_layout(
     hovermode='x unified'
 )
 
-st.plotly_chart(fig4, use_container_width=True)
+st.plotly_chart(fig4, width='stretch')
 
 # DATA TABLE
 
@@ -453,7 +454,7 @@ display_df.columns = ["Symbol", "Sector", "Avg Return (%)", "Volatility (%)", "R
 
 st.dataframe(
     display_df,
-    use_container_width=True,
+    width='stretch',
     height=400
 )
 
